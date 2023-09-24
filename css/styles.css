@@ -290,11 +290,7 @@ body {
   border-radius: 4px;
   border: 1px solid #8e8f99;
   background: #f4f4fd;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  padding-left: 100px;
-  padding-right: 100px;
-  margin-bottom: 8px;
+
   gap: 24px;
 }
 .employees-text {
@@ -436,7 +432,6 @@ body {
 }
 .footer-list {
   display: flex;
-  margin-bottom: 120px;
 
   gap: 16px;
 }
