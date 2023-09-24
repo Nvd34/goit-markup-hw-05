@@ -670,9 +670,6 @@ body {
 .reveiw-form-input-wrapper {
   position: relative;
 }
-.reveiw-form-field-wrapper-text {
-  margin-bottom: 16px;
-}
 
 .reveiw-form-input {
   width: 100%;
@@ -702,6 +699,9 @@ body {
 }
 .reveiw-form-field-wrapper {
   margin-bottom: 8px;
+}
+.reveiw-form-field-wrapper-comment {
+  margin-bottom: 16px;
 }
 .reveiw-form-comment {
   width: 100%;
