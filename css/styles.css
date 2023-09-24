@@ -629,15 +629,21 @@ body {
   list-style: 0;
   padding: 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.close-btn:hover,
+.close-btn:hover {
+  fill: #ffffff;
+}
 .close-btn:focus {
   background-color: #404bbf;
   border: none;
+  fill: #ffffff;
 }
 
 .close-btn-icon {
   fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* MODAL FORM */
@@ -675,6 +681,9 @@ body {
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   padding-left: 38px;
+  background-color: transparent;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .reveiw-form-field-icon {
   position: absolute;
@@ -682,6 +691,7 @@ body {
   left: 16px;
   transform: translateY(-50%);
   fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .reveiw-form-input:focus {
   border-color: #4d5ae5;
@@ -692,7 +702,8 @@ body {
   fill: #4d5ae5;
 }
 .reveiw-form-field-wrapper {
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
+  margin-bottom: 16px;
 }
 .reveiw-form-comment {
   width: 100%;
@@ -711,7 +722,11 @@ body {
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   resize: none;
+  background-color: transparent;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .reveiw-form-comment::placeholder {
   color: rgba(46, 47, 66, 0.4);
 }
@@ -733,13 +748,16 @@ body {
   cursor: pointer;
   fill: transparent;
   margin-right: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .reveiw-form-checkbox:checked
   + .reveiw-form-checkbox-label
   > .reveiw-form-own-checkbox {
   background-color: #404bbf;
-  fill: #d9d9d9;
+  fill: #f4f4fd;
   border: none;
 }
 .reveiw-form-checkbox-wrapper {
@@ -778,9 +796,8 @@ body {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   color: #fff;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 16px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   font-weight: 500;
   line-height: 1.5; /* 150% */
