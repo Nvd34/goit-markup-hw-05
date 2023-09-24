@@ -627,15 +627,14 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.close-btn:hover {
-  fill: #ffffff;
-  background-color: #404bbf;
-  border: none;
-}
+.close-btn:hover,
 .close-btn:focus {
   background-color: #404bbf;
   border: none;
-  fill: #ffffff;
+}
+.close-btn:focus .close-btn-icon,
+.close-btn:hover .close-btn-icon {
+  fill: #fff;
 }
 
 .close-btn-icon {
