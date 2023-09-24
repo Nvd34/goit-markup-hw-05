@@ -629,6 +629,8 @@ body {
 }
 .close-btn:hover {
   fill: #ffffff;
+  background-color: #404bbf;
+  border: none;
 }
 .close-btn:focus {
   background-color: #404bbf;
@@ -697,8 +699,7 @@ body {
   fill: #4d5ae5;
 }
 .reveiw-form-field-wrapper {
-  /* margin-bottom: 8px; */
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 .reveiw-form-comment {
   width: 100%;
